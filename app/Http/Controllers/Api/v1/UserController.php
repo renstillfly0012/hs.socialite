@@ -88,6 +88,6 @@ class UserController extends Controller
     public function destroy(User $user)
     {
         $user->delete();
-        return json_encode(User::paginate(5));
+        return json_encode(User::paginate(10));
     }
 }
