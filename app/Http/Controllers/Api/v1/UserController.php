@@ -16,7 +16,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        return json_encode(User::paginate(5));
+        return json_encode(User::paginate(10));
     }
 
     /**
